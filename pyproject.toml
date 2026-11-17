@@ -1,0 +1,29 @@
+[project]
+name = "mc846-credit-risk"
+version = "0.1.0"
+description = "Projeto Final MC846 — Predição de Risco de Crédito (Give Me Some Credit)"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "scikit-learn>=1.5",
+    "pandas>=2.2",
+    "numpy>=2.0",
+    "matplotlib>=3.9",
+    "seaborn>=0.13",
+    "xgboost>=2.1",
+    "lightgbm>=4.5",
+    "imbalanced-learn>=0.12",
+    "scipy>=1.14",
+]
+
+[dependency-groups]
+dev = [
+    "jupyter>=1.1",
+    "jupyterlab>=4.3",
+    "ipykernel>=6.29",
+    "black>=24.0",
+    "ruff>=0.7",
+]
+
+[project.scripts]
+pipeline = "src.main:main"
